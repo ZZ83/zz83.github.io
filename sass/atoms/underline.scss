@@ -1,0 +1,14 @@
+@use '../abstracts' as *;
+
+.underline {  
+    width: rem(300px); 
+    height: rem(2px);
+    margin: 0 auto rem(52px);
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), $orange, rgba(0, 0, 0, 0));
+    @include mq(medium) {
+        margin-bottom: rem(64px);
+    }
+    @include mq(large) {
+        margin-bottom: rem(72px);
+    }
+}

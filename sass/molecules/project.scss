@@ -1,0 +1,39 @@
+@use '../abstracts' as *;
+
+.project {
+    padding-bottom: rem(20px);
+    background-color: $dark-blue;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    &__image {
+        width: 100%;
+        display: block;
+        border-radius: 10px 10px 0 0;
+    }
+    &__header {
+        margin-top:    rem(20px);
+        margin-bottom: rem(12px);
+        padding: 0 16px;
+        font-size: rem(25.63px);
+        @include mq(medium) {
+            font-size: rem(28.83px);
+        }
+        @include mq(large) {
+            font-size: rem(32.44px);
+        }
+    }
+    &__sub-header {
+        margin-top: auto;
+        padding: 0 16px;
+    }
+    span:nth-child(1) { 
+        color: #F16529;
+    };
+    span:nth-child(2) { 
+        color: #33a9dc;
+    };
+    span:nth-child(3) { 
+        color: #FFC045;
+    };
+}

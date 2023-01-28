@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Zekel Keys Portfolio</title>
+</head>
+    <body>
+        <!-- HEADER -->
+        <header id="home" class="header wrapper">
+            <!-- LOGO -->
+            <img class="logo" src="images/logo.svg" alt="ZK Logo">
+            <!-- MOBILE MENU BUTTON -->
+            <button class="mobile-menu-icons" aria-expanded="false" aria-controls="navigation" aria-label="Navigation"></button>
+            <!-- PRIMARY NAVIGATION -->
+            <nav id="navigation" class="navigation" data-visible="false">
+                <ul class="navigation__inner" >
+                    <li><a class="navigation__link" href="#about">About</a></li>
+                    <li><a class="navigation__link" href="#skills">Skills</a></li>
+                    <li><a class="navigation__link" href="#projects">Projects</a></li>
+                    <li><a class="navigation__link" href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <!-- HERO SECTION -->
+            <section class="hero-section wrapper">
+                <!-- HERO -->
+                <div class="hero">
+                    <h1   class="hero__intro">Hi, I am <span>Zekel Keys</span></h1>
+                    <span class="position__text">Email Developer</span>
+                     <!-- PROJECTS LINK -->
+                    <a href="#projects" class="btn-projects">View Projects</a>
+                    <!-- ABOUT LINK -->
+                    <a href="#about">
+                        <svg class="btn-about" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve">
+                            <path style="fill:transparent" d="M256 504C119.248 504 8 392.752 8 256S119.248 8 256 8s248 111.248 248 248-111.248 248-248 248z"/>
+                            <path    d="M416.064 214.656 256 378.016 95.936 214.656l49.968-48.8L256 278.208l110.096-112.352z"/>
+                        </svg>
+                    </a>
+                </div>
+            </section>
+            <!-- ABOUT SECTION -->
+            <div class="bg-dbl">
+                <section id="about" class="section wrapper">
+                    <h2>About Me</h2>
+                    <div class="underline"></div>
+                    <!-- ABOUT INTRO -->
+                    <div class="about-intro">
+                        <img class="about-intro__image" src="images/self.jpg" alt="Zekel Keys">
+                        <div class="about-intro__inner">
+                            <h3  class="about-intro__header">I am <span>Zekel Keys</span></h3>
+                            <h4  class="about-intro__sub-header">Email Developer</h4>
+                            <p class="about-intro__paragraph">I am a self-taught Email developer located in southern California. I am currently focused on leveling up my skills in email development so I can help create more user-friendly and accessible emails. As a lifelong learner, I enjoy the challenges of learning new things, and I am willing to learn new skills, tools, frameworks, or techniques.</p>
+                            <p class="about-intro__paragraph">In my free time, I enjoy playing video games like World of Warcraft, Forza, and Mass Effect, to name a few. I also enjoy hitting the trails, whether that's hiking or mountain biking.</p>
+                            <div class="icons">
+                                <a class="icons__link" href="https://github.com/ZZ83" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M7.999 0C3.582 0 0 3.596 0 8.032a8.031 8.031 0 0 0 5.472 7.621c.4.074.546-.174.546-.387 0-.191-.007-.696-.011-1.366-2.225.485-2.695-1.077-2.695-1.077-.363-.928-.888-1.175-.888-1.175-.727-.498.054-.488.054-.488.803.057 1.225.828 1.225.828.714 1.227 1.873.873 2.329.667.072-.519.279-.873.508-1.074-1.776-.203-3.644-.892-3.644-3.969 0-.877.312-1.594.824-2.156-.083-.203-.357-1.02.078-2.125 0 0 .672-.216 2.2.823a7.633 7.633 0 0 1 2.003-.27 7.65 7.65 0 0 1 2.003.271c1.527-1.039 2.198-.823 2.198-.823.436 1.106.162 1.922.08 2.125.513.562.822 1.279.822 2.156 0 3.085-1.87 3.764-3.652 3.963.287.248.543.738.543 1.487 0 1.074-.01 1.94-.01 2.203 0 .215.144.465.55.386A8.032 8.032 0 0 0 16 8.032C16 3.596 12.418 0 7.999 0z"/></svg>
+                                </a>
+                                <a class="icons__link" href="https://www.linkedin.com/" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M16 0C7.164 0 0 7.163 0 16c0 8.836 7.164 16 16 16s16-7.164 16-16c0-8.837-7.164-16-16-16zm-4.156 22.277H8.58v-9.82h3.264v9.82zm-1.632-11.161h-.021c-1.096 0-1.804-.755-1.804-1.697 0-.963.73-1.696 1.846-1.696s1.804.733 1.825 1.696c0 .943-.709 1.697-1.846 1.697zm13.401 11.161h-3.264v-5.254c0-1.32-.472-2.22-1.654-2.22-.901 0-1.438.607-1.674 1.194-.086.21-.108.503-.108.796v5.484H13.65s.043-8.898 0-9.82h3.264v1.391c.433-.669 1.209-1.622 2.942-1.622 2.147 0 3.757 1.404 3.757 4.42v5.631z"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- SKILLS SECTION -->
+            <section id="skills" class="section wrapper">
+                <h2>Skills & Tools</h2>
+                <div class="underline"></div>
+                <div class="skills">
+                    <svg viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M27.854 116.354 19.81 26.143h88.378l-8.051 90.197-36.193 10.033-36.091-10.019Z" fill="#E44D26"/><path d="m64 118.704 29.244-8.108 6.881-77.076H64v85.184Z" fill="#F16529"/><path d="M64 66.978H49.359l-1.01-11.331h15.65V44.583H36.258l.264 2.969 2.72 30.489H64V66.978Zm0 28.733-.05.013-12.32-3.328-.788-8.823H39.735l1.55 17.372 22.664 6.292.05-.015V95.711Z" fill="#EBEBEB"/><path d="M28.034 1.627h5.622v5.556H38.8V1.627h5.623v16.822H38.8v-5.633h-5.143v5.633h-5.623V1.627Zm23.782 5.579h-4.95V1.627h15.525v5.579H57.44v11.243h-5.623V7.206Zm13.04-5.579h5.861l3.607 5.911 3.603-5.911h5.865v16.822h-5.6v-8.338l-3.868 5.981h-.098l-3.87-5.981v8.338h-5.502V1.627h.001Zm21.735 0h5.624v11.262h7.907v5.561h-13.53V1.627ZM63.962 66.978v11.063h13.624L76.302 92.39l-12.34 3.331v11.51l22.682-6.286.166-1.87 2.6-29.127.27-2.97H63.962Zm0-22.395v11.064h26.725l.22-2.487.506-5.608.265-2.969H63.962Z" fill="#fff"/></svg>
+                    <svg viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M89.234 5.856H81.85l7.679 8.333v3.967H73.713v-4.645h7.678l-7.678-8.333V1.207h15.52v4.649Zm-18.657 0h-7.384l7.679 8.333v3.967H55.055v-4.645h7.679l-7.68-8.333V1.207h15.523v4.649Zm-18.474.19h-7.968v7.271h7.968v4.839H38.47V1.207h13.632v4.839Z" fill="#fff"/><path d="m27.613 116.706-8.097-90.813h88.967l-8.104 90.798-36.434 10.102-36.332-10.087Z" fill="#1572B6"/><path d="m64.001 119.072 29.439-8.162 6.926-77.591H64.001v85.753Z" fill="#33A9DC"/><path d="M64 66.22h14.738l1.019-11.405H64V43.677h27.929l-.267 2.988-2.737 30.692H64V66.22Z" fill="#fff"/><path d="m64.067 95.146-.05.014-12.403-3.35-.794-8.883H39.64l1.562 17.488 22.814 6.333.052-.015V95.146h-.001Z" fill="#EBEBEB"/><path d="M77.792 76.886 76.45 91.802l-12.422 3.353v11.588l22.833-6.328.168-1.882 1.938-21.647H77.792Z" fill="#fff"/><path d="M64.039 43.677v11.137H37.136l-.224-2.503-.507-5.646-.267-2.988h27.9Zm-.04 22.544v11.138H51.754l-.223-2.503-.508-5.647-.267-2.988H64Z" fill="#EBEBEB"/></svg>
+                    <svg viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M108 26.299H20l8.25 89.552L63.995 126l35.746-10.149L108 26.299Z" fill="#E6A329"/><path d="M63.995 33.595v84.816l28.963-8.213 7.045-76.603H63.995Z" fill="#F1BF22"/><path d="M87.037 44.581H42.506l-3.102 33.526.064-.208h37.831l-1.232 14.185-12.07 3.476-12.249-3.532-.734-8.586H39.896l1.586 17.156 22.515 6.398 22.524-6.398 3.102-33.674h-40.15l.515-11.22h27.857l.417 6.428h11.212l-2.437-17.55Z" fill="#fff"/><path d="M64.006 44.581h-21.5l-3.102 33.526.064-.208h24.536V66.962H51.04l.515-11.22h12.452v-11.16ZM51.039 83.448H39.895l1.586 17.146 22.514 6.392v-11.41l-12.248-3.541-.708-8.587Z" fill="#EBEBEB"/><path d="M55.439 13.09h-7.834v5.63h13.441V2h-5.6l-.007 11.09Zm24.953-11H66.735v5.853c1.824 1.825 2.775 2.703 5.461 5.347h-5.46v5.337H80.39V13.3l-5.455-5.347h5.46l-.004-5.862Z" fill="#fff"/></svg>
+                    <svg viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M98.641 69.641c-3.356.02-6.263.872-8.7 2.14-.9-1.882-1.8-3.526-1.95-4.754-.17-1.426-.375-2.297-.17-4 .207-1.704 1.145-4.12 1.145-4.318-.02-.178-.207-1.05-2.138-1.07-1.931-.02-3.6.397-3.788.932a23.747 23.747 0 0 0-.806 3.03c-.338 1.861-3.863 8.456-5.87 11.922-.656-1.347-1.218-2.535-1.331-3.486-.169-1.425-.375-2.297-.169-4 .207-1.704 1.144-4.12 1.144-4.318-.019-.178-.206-1.05-2.137-1.069-1.932-.02-3.6.396-3.788.93-.188.536-.394 1.803-.806 3.031-.394 1.228-5.082 12.24-6.301 15.11a62.711 62.711 0 0 1-1.557 3.427c-.393.792-.018.06-.056.139l-.525 1.05v.02c-.262.495-.544.97-.675.97-.094 0-.281-1.327.037-3.15.694-3.822 2.382-9.783 2.363-10 0-.1.319-1.15-1.088-1.684-1.368-.535-1.856.357-1.968.357-.113 0-.207.317-.207.317s1.52-6.714-2.906-6.714c-2.776 0-6.6 3.188-8.495 6.1-1.2.693-3.75 2.158-6.45 3.723-1.032.594-2.1 1.228-3.113 1.802l-.206-.238c-5.363-6.04-15.283-10.318-14.87-18.438.15-2.95 1.125-10.734 19.052-20.161 14.682-7.724 26.44-5.605 28.483-.891 2.907 6.733-6.282 19.25-21.545 21.052-5.813.693-8.87-1.683-9.639-2.575-.806-.93-.918-.97-1.218-.792-.488.278-.188 1.11 0 1.605.45 1.247 2.325 3.465 5.513 4.574 2.793.97 9.62 1.505 17.87-1.861C71.02 54.57 78.24 44.073 76.12 35.3c-2.157-8.932-16.183-11.863-29.44-6.892-7.895 2.97-16.446 7.605-22.596 13.685-7.313 7.209-8.476 13.507-7.988 16.121 1.706 9.328 13.876 15.408 18.751 19.904-.243.138-.468.277-.675.396-2.437 1.267-11.72 6.397-14.045 11.823-2.625 6.14.413 10.556 2.438 11.15 6.263 1.842 12.676-1.465 16.145-6.912 3.45-5.446 3.038-12.516 1.444-15.744l-.056-.12 1.912-1.187a113.229 113.229 0 0 1 3.526-2.1c-.6 1.723-1.032 3.763-1.257 6.734-.262 3.486 1.088 8 2.87 9.783.787.772 1.725.792 2.306.792 2.063 0 3-1.802 4.031-3.96 1.276-2.635 2.4-5.684 2.4-5.684s-1.406 8.258 2.438 8.258c1.407 0 2.813-1.921 3.45-2.911v.02s.038-.06.113-.199c.079-.122.154-.248.225-.376v-.04c.563-1.03 1.82-3.386 3.694-7.287 2.42-5.03 4.744-11.329 4.744-11.329s.225 1.545.92 4.08c.412 1.505 1.312 3.15 2.005 4.753-.562.832-.9 1.308-.9 1.308l.02.02a55.89 55.89 0 0 1-1.482 1.98c-1.913 2.416-4.2 5.17-4.5 5.961-.357.93-.282 1.624.412 2.179.506.396 1.407.475 2.363.396 1.725-.12 2.925-.575 3.525-.852a11.994 11.994 0 0 0 3.038-1.683c1.875-1.466 3.019-3.545 2.906-6.318-.056-1.525-.525-3.03-1.106-4.456.169-.257.338-.515.506-.792 2.963-4.575 5.25-9.605 5.25-9.605s.226 1.544.92 4.08c.356 1.287 1.069 2.693 1.706 4.08-2.775 2.396-4.52 5.168-5.12 6.99-1.105 3.367-.243 4.892 1.389 5.249.73.158 1.78-.198 2.568-.555a11.421 11.421 0 0 0 3.245-1.763c1.875-1.465 3.675-3.505 3.581-6.258-.056-1.267-.375-2.515-.806-3.703 2.362-1.03 5.419-1.624 9.301-1.129 8.344 1.03 9.994 6.535 9.676 8.833-.319 2.297-2.063 3.565-2.645 3.96-.581.377-.768.516-.712.793.075.416.337.396.844.317.693-.119 4.388-1.881 4.538-6.12.225-5.447-4.67-11.388-13.352-11.329ZM34.286 92.555c-2.757 3.189-6.638 4.397-8.288 3.367-1.782-1.09-1.088-5.783 2.306-9.17 2.063-2.06 4.744-3.96 6.507-5.129.394-.257.994-.633 1.706-1.09.113-.078.188-.118.188-.118.131-.08.281-.178.431-.277 1.256 4.832.056 9.07-2.85 12.417Zm20.158-14.477c-.957 2.476-2.982 8.833-4.2 8.477-1.05-.298-1.688-5.11-.207-9.863.75-2.397 2.344-5.248 3.282-6.358 1.519-1.782 3.168-2.376 3.581-1.644.488.951-1.856 7.843-2.456 9.388Zm16.632 8.397c-.412.218-.787.377-.956.258-.131-.08.169-.376.169-.376S72.37 84 73.195 82.91c.469-.634 1.032-1.367 1.632-2.199v.238c0 2.852-2.588 4.753-3.75 5.525Zm12.826-3.09c-.3-.237-.262-.97.75-3.267.394-.911 1.294-2.436 2.85-3.882.188.594.301 1.168.282 1.703-.019 3.565-2.419 4.892-3.882 5.447Z" fill="#CF649A"/></svg>
+                    <svg viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M55.151 62.496 35.503 42.849a2.895 2.895 0 0 0-4.098 0l-4.08 4.08 5.176 5.175a3.44 3.44 0 0 1 4.358 4.388l4.987 4.988a3.443 3.443 0 0 1 4.574 3.257 3.447 3.447 0 0 1-3.11 3.432 3.448 3.448 0 0 1-3.529-4.745l-4.65-4.651-.001 12.24a3.45 3.45 0 0 1 .912 5.53 3.447 3.447 0 0 1-5.74-1.44 3.449 3.449 0 0 1 1.992-4.19V58.56a3.447 3.447 0 0 1-1.872-4.523l-5.101-5.102-13.472 13.47a2.898 2.898 0 0 0 0 4.1l19.648 19.647a2.898 2.898 0 0 0 4.098 0l19.556-19.555a2.9 2.9 0 0 0 0-4.1Z" fill="#DE4C36"/><path d="M74.69 57.56c-2.316 0-4.04 1.33-4.04 4.53 0 2.412 1.136 4.086 3.914 4.086 2.356 0 3.955-1.624 3.955-4.186 0-2.903-1.431-4.43-3.83-4.43Zm-4.63 22.598c-.547.786-1.094 1.622-1.094 2.608 0 1.968 2.146 2.56 5.093 2.56 2.44 0 5.765-.2 5.765-2.855 0-1.578-1.6-1.675-3.62-1.823l-6.143-.49Zm12.457-22.45c.756 1.133 1.557 2.71 1.557 4.973 0 5.464-3.661 8.664-8.963 8.664-1.348 0-2.568-.197-3.325-.443l-1.39 2.608 4.125.296c7.28.543 11.572.79 11.572 7.334 0 5.662-4.25 8.86-11.572 8.86C66.904 90 64 87.736 64 83.847c0-2.215.842-3.394 2.315-5.022-1.39-.686-1.852-1.916-1.852-3.246 0-1.084.463-2.068 1.221-3.004.757-.934 1.599-1.87 2.609-2.954-2.062-1.181-3.62-3.74-3.62-7.384 0-5.66 3.2-9.548 9.637-9.548 1.81 0 2.904.195 3.872.492h8.207v4.183l-3.872.345Zm11.276-8.944c-2.4 0-3.788-1.626-3.788-4.433 0-2.803 1.389-4.331 3.788-4.331 2.44 0 3.83 1.528 3.83 4.33 0 2.808-1.389 4.434-3.83 4.434Zm-5.43 29.582V74.46l2.147-.343c.59-.1.673-.246.673-.986V58.657c0-.54-.125-.887-.548-1.033l-2.272-.936.463-3.986h8.712V73.13c0 .788.04.887.674.986l2.146.344v3.886H88.363ZM117 76.438c-1.81 1.033-4.461 1.968-6.861 1.968-5.008 0-6.901-2.36-6.901-7.926V57.585c0-.296 0-.492-.338-.492h-2.945V52.71c3.704-.494 5.176-2.66 5.639-8.025h3.999v6.992c0 .343 0 .492.337.492h5.933v4.923h-6.27v11.764c0 2.904.589 4.036 2.861 4.036 1.18 0 2.399-.344 3.408-.787L117 76.438Z" fill="#fff"/></svg>
+                    <svg viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M67.371 62.637h-6.27a.293.293 0 0 0-.292.293v3.065a.293.293 0 0 0 .293.293h2.445v3.809s-.55.187-2.069.187c-1.79 0-4.293-.654-4.293-6.157s2.607-6.228 5.053-6.228c2.118 0 3.03.373 3.611.552.182.055.352-.126.352-.288l.699-2.962a.274.274 0 0 0-.113-.228c-.236-.17-1.674-.973-5.307-.973C57.294 54 53 55.78 53 64.342c0 8.56 4.916 9.836 9.059 9.836 3.43 0 5.51-1.466 5.51-1.466.086-.047.095-.167.095-.223v-9.56a.293.293 0 0 0-.293-.292Zm32.022-7.906h-3.53a.293.293 0 0 0-.292.295v6.823H90.07v-6.823a.292.292 0 0 0-.291-.295h-3.53a.292.292 0 0 0-.293.295v18.475c0 .162.132.294.292.294h3.53a.292.292 0 0 0 .292-.295v-7.902h5.503l-.01 7.902c0 .163.132.295.294.295h3.537a.292.292 0 0 0 .292-.295V55.025a.291.291 0 0 0-.292-.294Zm-27.636.42a2.286 2.286 0 0 0-2.276 2.299c0 1.27 1.02 2.3 2.276 2.3 1.257 0 2.276-1.03 2.276-2.3a2.286 2.286 0 0 0-2.276-2.299Zm1.732 5.63h-3.52c-.16 0-.305.166-.305.328v12.218c0 .36.224.466.513.466h3.17c.349 0 .434-.171.434-.472V61.076a.294.294 0 0 0-.292-.295Zm39.613.028h-3.504a.297.297 0 0 0-.206.087.287.287 0 0 0-.085.208v9.058s-.89.65-2.153.65-1.598-.572-1.598-1.808v-7.9a.288.288 0 0 0-.179-.272.29.29 0 0 0-.112-.023h-3.555a.293.293 0 0 0-.292.295V69.6c0 3.674 2.048 4.573 4.864 4.573 2.311 0 4.174-1.278 4.174-1.278s.088.674.129.753a.31.31 0 0 0 .258.16l2.262-.01a.3.3 0 0 0 .208-.087.302.302 0 0 0 .085-.208l-.002-12.402a.293.293 0 0 0-.293-.294h-.001Zm9.575-.415c-1.989 0-3.343.887-3.343.887v-6.256a.289.289 0 0 0-.085-.207.295.295 0 0 0-.206-.087h-3.54a.287.287 0 0 0-.208.086.302.302 0 0 0-.085.208V73.5a.29.29 0 0 0 .181.272.287.287 0 0 0 .112.023h2.456c.112 0 .195-.057.256-.157s.149-.852.149-.852 1.448 1.37 4.189 1.37c3.216 0 5.062-1.63 5.062-7.325 0-5.694-2.947-6.437-4.938-6.437Zm-1.382 10.408c-1.215-.037-2.04-.588-2.04-.588v-5.85s.814-.499 1.811-.589c1.262-.113 2.477.269 2.477 3.278 0 3.174-.548 3.8-2.248 3.75Zm-37.318-.069c-.154 0-.55.063-.955.063-1.301 0-1.742-.605-1.742-1.388v-5.195h2.648a.294.294 0 0 0 .293-.295v-2.845a.293.293 0 0 0-.293-.294H81.28l-.004-3.498c0-.133-.068-.2-.222-.2h-3.61c-.139 0-.214.063-.214.197v3.615s-1.81.437-1.931.472a.293.293 0 0 0-.21.28v2.273a.293.293 0 0 0 .29.294h1.85v5.466c0 4.06 2.848 4.459 4.77 4.459.877 0 1.928-.281 2.101-.346.106-.039.166-.147.166-.265l.003-2.5a.3.3 0 0 0-.293-.293Z" fill="#fff"/><path fill-rule="evenodd" clip-rule="evenodd" d="M25.5 42C13.076 42 3 52.328 3 65.07c0 10.193 6.447 18.841 15.387 21.891 1.125.214 1.538-.5 1.538-1.11 0-.55-.021-2.367-.031-4.294-6.26 1.395-7.58-2.722-7.58-2.722-1.024-2.667-2.5-3.377-2.5-3.377-2.04-1.431.154-1.402.154-1.402 2.26.163 3.45 2.378 3.45 2.378 2.007 3.527 5.264 2.507 6.547 1.917.203-1.49.786-2.51 1.43-3.085-4.998-.583-10.252-2.562-10.252-11.402 0-2.518.879-4.576 2.318-6.192-.233-.581-1.003-2.928.218-6.106 0 0 1.89-.62 6.188 2.366a21.065 21.065 0 0 1 5.633-.777c1.912.01 3.838.266 5.636.777 4.295-2.985 6.182-2.366 6.182-2.366 1.224 3.178.454 5.524.22 6.106 1.443 1.615 2.316 3.674 2.316 6.193 0 8.86-5.264 10.812-10.274 11.382.807.716 1.526 2.12 1.526 4.273 0 3.087-.025 5.57-.025 6.33 0 .613.405 1.333 1.545 1.107C41.562 83.903 48 75.257 48 65.068 48.001 52.328 37.927 42 25.5 42Z" fill="#fff"/></svg>
+                </div>
+            </section>
+            <!-- PROJECTS SECTION -->
+            <div class="bg-dbl">
+                <section id="projects" class="section wrapper">
+                    <h2>Projects</h2>
+                    <div class="underline"></div>
+                    <!-- TABS -->
+                    <div class="tabs">
+                        <button class="btn-projects btn-projects--p btn-projects--active">All</button>
+                        <button class="btn-projects btn-projects--p">Emails</button>
+                        <button class="btn-projects btn-projects--p">Landing Pages</button>
+                    </div>
+                    <!-- PROJECTS -->
+                    <div class="projects">
+                        <!-- EQUALIZER LANDING PAGE -->
+                        <div class="project website">
+                            <img class="project__image" src="images/previews/equalizer.jpg" alt="Equalizer Homepage">
+                            <h3 class="project__header">Equalizer Landing Page</h3>
+                            <h4 class="project__sub-header"><span>HTML</span> <span>CSS</span></h4>
+                            <div class="view">
+                                <a href="https://github.com/ZZ83/equalizer-landing-page" target="_blank" class="view__link">View Code</a>
+                                <a href="https://zz83.github.io/equalizer-landing-page"  target="_blank" class="view__link">View Project</a>
+                            </div>
+                        </div>
+                        <!-- E-LEARING LANDING PAGE -->
+                        <div class="project website">
+                            <img class="project__image" src="images/previews/e-learning.jpg" alt="Elearning Homepage">
+                            <h3 class="project__header">Elearning landing page</h3>
+                            <h4 class="project__sub-header"><span>HTML</span> <span>CSS</span></h4>
+                            <div class="view">
+                                <a href="https://github.com/ZZ83/elearning-landing-page" target="_blank" class="view__link">View Code</a>
+                                <a href="https://zz83.github.io/elearning-landing-page"  target="_blank" class="view__link">View Project</a>
+                            </div>
+                        </div>
+                        <!-- DONATION REQUEST EMAIL -->
+                        <div class="project email">
+                            <img class="project__image" src="images/previews/request.gif" alt="Meet Homepage">
+                            <h3 class="project__header">Donation Request Email</h3>
+                            <h4 class="project__sub-header"><span>HTML</span> <span>CSS</span></h4>
+                            <div class="view">
+                                <a href="https://github.com/ZZ83/donation-request-email" target="_blank" class="view__link">View Code</a>
+                                <a href="https://zz83.github.io/donation-request-email"  target="_blank" class="view__link">View Project</a>
+                            </div>
+                        </div>
+                        <!-- MEET LANDING PAGE -->
+                        <div class="project website">
+                            <img class="project__image" src="images/previews/meet.jpg" alt="Meet Homepage">
+                            <h3 class="project__header">Meet Landing Page</h3>
+                            <h4 class="project__sub-header"><span>HTML</span> <span>CSS</span></h4>
+                            <div class="view">
+                                <a href="https://github.com/ZZ83/meet-landing-page" target="_blank" class="view__link">View Code</a>
+                                <a href="https://zz83.github.io/meet-landing-page"  target="_blank" class="view__link">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- CONTACT SECTION -->
+            <section id="contact" class="section wrapper">
+                <h2>Contact Me</h2>
+                <div class="underline"></div>
+                <!-- CONTACT FORM -->
+                <form class="contact" action="https://formsubmit.co/86252548d15bfd9166bd0cda0ca0ae54" method="POST">
+                    <input type="hidden" name="_next" value="https://zz83.github.io/portfolio/html/thanks.html">
+                    <label class="contact__label" for="name">Name:</label>
+                    <input id="name" class="contact__input"  type="text" name="name" required/>  
+                    <label class="contact__label" for="email">Email:</label>
+                    <input id="email" class="contact__input" type="text" name="email" required/>
+                    <input type="hidden" name="_subject" value="You have a new email">
+                    <label class="contact__label" for="message">Message:</label>
+                    <textarea id="message" class="contact__input" name="text" required></textarea>
+                    <input class="contact__submit" type="submit" value="Send Message" />
+                </form>
+            </section>
+        </main>
+        <!-- FOOTER -->
+        <div class="bg-dbl">
+            <footer class="footer">
+                <h5>Copyright &copy; 2023 Zekel Keys</h5>
+            </footer>
+        </div>
+        <a class="btn-top" href="#home">Top</a>
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,15 @@
+@use '../abstracts' as *;
+
+.thanks {
+    padding: 0 64px; 
+    height: 100vh; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    flex-direction: column;
+    h1 {
+        @include mq(medium) {
+            font-size: rem(65.76px);
+        }
+    }
+}

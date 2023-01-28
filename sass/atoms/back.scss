@@ -1,0 +1,10 @@
+@use '../abstracts' as *;
+
+.back {
+    color: white;
+    font-size: rem(18px);
+    text-decoration: underline;
+    &:hover {
+        color: #33a9dc;
+    }
+}

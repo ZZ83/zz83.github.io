@@ -1,0 +1,18 @@
+@use '../abstracts' as *;
+
+.mobile-menu-icons {
+    cursor: pointer;
+    width:  rem(30px);
+    height: rem(30px);
+    border: 0;
+    background-color: transparent;
+    background-image: url(../images/menu-open.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    &[aria-expanded="true"] {
+        background-image: url(../images/menu-close.svg);
+    }
+    @include mq(medium) {
+        display: none;
+    }
+}

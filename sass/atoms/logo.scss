@@ -1,0 +1,10 @@
+@use '../abstracts' as *;
+
+.logo {
+    width:  rem(56px);
+    height: rem(56px);
+    @include mq(medium) {
+        width:  rem(64px);
+        height: rem(64px);
+    }
+}

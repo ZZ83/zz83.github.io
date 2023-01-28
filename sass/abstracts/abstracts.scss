@@ -1,0 +1,109 @@
+/********************** Variables **********************/
+    // Descriptive base colors
+    $white:           #FFFFFF;
+    $orange:          #FFC045;
+    $dark-blue:       #041C32;
+    $dark-blue-light: #04293A;
+    
+/********************** Functions **********************/
+    // Convert pixes to rems
+    @function rem($size) {
+        @return calc($size / 16px * 1rem);
+    }
+
+/********************** Mixins **********************/
+    // BEM selectors
+    @mixin ele($element) {
+        &__#{$element} {
+            @content;
+        }
+    }
+
+    @mixin mod($modifier) {
+        &--#{$modifier} {
+            @content;
+        }
+    }
+
+    // Media queries
+    @mixin mq($break) {
+        @if $break == "medium" {
+            @media (min-width: 768px) {
+                @content;
+            }
+        }
+        @else if $break == "large" {
+            @media (min-width: 1360px) {
+                @content;
+            }
+        }
+    }
+
+/********************** PLACHOLDERS **********************/
+    // Flexbox 
+    %flex {
+        display: flex;
+    }
+
+    %flex-ai-c {
+        align-items: center;
+    }
+
+    %flex-jc-sb {
+        justify-content: space-between;
+    }
+
+    %flex-jc-sa {
+        justify-content: space-around;
+    }
+
+    %flex-jc-c {
+        justify-content: center;
+    }
+
+    %flex-d-r {
+        flex-direction: row;
+    }
+
+    %flex-d-c {
+        flex-direction: column;
+    }
+
+    %flex-center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    // Border Raidus
+    %br-15 {
+        border-radius: 15px;
+    }
+
+    // Layout
+    %center {
+        margin: 0 auto;
+    }
+
+    %width-100 {
+        width: 100%;
+    }
+
+    %margin-t-96 {
+        margin-top: rem(96px);
+    }
+
+    %margin-t-120 {
+        margin-top: rem(120px);
+    }
+
+/********************** HELPER CLASSES **********************/
+.wrapper {
+    width: 90%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.bg-dbl {
+    background-color: $dark-blue-light;
+}

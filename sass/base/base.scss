@@ -1,0 +1,105 @@
+@use '../abstracts' as *;
+
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+  	box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+    color: $white;
+    background-color: $dark-blue;
+    font-family: 'Saira Semi Condensed', sans-serif; 
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+p {
+    margin:  0;
+    padding: 0;
+}
+
+h1 {
+    font-size: rem(36.49px);
+    @include mq(medium) {
+        font-size: rem(83.23px);
+    }
+}
+
+h2 {
+    color: $orange;
+    text-align: center;
+    font-size: rem(32.44px);
+    margin-bottom: rem(24px);
+    @include mq(medium) {
+        font-size: rem(46.18px);
+    }
+}
+
+h3 {
+    font-size: rem(28.83px);
+    @include mq(medium) {
+        font-size: rem(32.44px);
+    }
+}
+
+h4 {
+    font-size: rem(14.22px);
+    letter-spacing: rem(1px);
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+p {
+    line-height: rem(25.63px);
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    cursor: pointer;
+}
+
+a {
+    font-weight: 500;
+    text-decoration: none;
+    &:hover {
+        color: $white;
+    }
+}
+
+form { 
+    margin: 0 auto;
+    max-width:600px; 
+}
+
+label {
+    display: block;
+    font-size: rem(22.78px);
+    padding-bottom: rem(8px);
+    @include mq(medium) {
+        font-size: rem(25.63px);
+    }
+}
+
+input,
+textarea {
+    font-size:   rem(18px);
+	line-height: rem(28.83px);
+}
+
+textarea {
+    resize: vertical;
+	height: rem(248px);
+}
+    
