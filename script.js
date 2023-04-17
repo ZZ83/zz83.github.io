@@ -66,3 +66,45 @@ window.onscroll = function() {
         mybutton.style.display = "none";
     }
 };
+
+/***************************************************************************/
+let part = 0;
+let partIndex = 0;
+let intervalValue;
+
+const content         = ["Front-End Developer", "Email Developer",];
+const positionText    = document.querySelector(".position__text");
+const positionCursor  = document.querySelector(".position__cursor");
+
+function Type() { 
+	const text =  content[part].substring(0, partIndex + 1);
+	positionText.innerHTML = text;
+	partIndex ++;
+	if(text === content[part]) {
+		clearInterval(intervalValue);
+		setTimeout(function() {
+			intervalValue = setInterval(Delete, 50);
+		}, 1500);
+	}
+}
+
+function Delete() {
+	const text =  content[part].substring(0, partIndex - 1);
+	positionText.innerHTML = text;
+	partIndex--;
+	if(text === '') {
+		clearInterval(intervalValue);
+		if(part == (content.length - 1)) {
+            part = 0;
+        } else {
+            part++;
+        }
+		partIndex = 0;
+		setTimeout(function() {
+			positionCursor.style.display = 'inline-block';
+			intervalValue = setInterval(Type, 100);
+		}, 200);
+	}
+}
+
+intervalValue = setInterval(Type, 100);
