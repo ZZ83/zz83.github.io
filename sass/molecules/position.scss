@@ -16,6 +16,8 @@
 		}
 	}
 	&__text {
+		color: $white; 
+		font-weight: 400;
         letter-spacing: 2px;
         font-size: rem(25.63px);
         @include mq(medium) {

@@ -895,6 +895,8 @@ textarea {
   }
 }
 .position__text {
+  color: #FFFFFF;
+  font-weight: 400;
   letter-spacing: 2px;
   font-size: 1.601875rem;
 }
