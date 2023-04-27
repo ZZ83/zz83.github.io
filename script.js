@@ -50,7 +50,6 @@ function showTab(tab, element) {
 tabs.addEventListener('click', (element) => {
     if(element.target.innerHTML === "All")           showTab("project",      element);
     if(element.target.innerHTML === "Games")         showTab("game",         element);
-    if(element.target.innerHTML === "Emails")        showTab("email",        element);
     if(element.target.innerHTML === "Websites")      showTab("website",      element);
     if(element.target.innerHTML === "Web Apps")      showTab("app",          element);
     if(element.target.innerHTML === "Landing Pages") showTab("landing-page", element);
