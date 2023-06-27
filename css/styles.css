@@ -730,50 +730,37 @@ textarea {
 }
 
 .skills {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 10%;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 5rem;
 }
-@media (min-width: 1360px) {
+@media (min-width: 768px) {
   .skills {
-    gap: 20%;
-    max-width: 76.25rem;
+    grid-template-columns: repeat(3, 9.375rem);
+    justify-content: space-between;
+    row-gap: 5rem;
+    max-width: 50rem;
     margin: 0 auto;
   }
 }
-.skills svg {
-  width: 80%;
-  margin: 0 auto;
-  margin-bottom: 5rem;
-}
-@media (min-width: 768px) {
-  .skills svg {
-    width: 45%;
-  }
-}
 @media (min-width: 1360px) {
-  .skills svg {
-    width: 32%;
-    max-width: 13.125rem;
-    margin-bottom: 0;
+  .skills {
+    grid-template-columns: repeat(4, 9.375rem);
+    max-width: 76.25rem;
   }
 }
-.skills svg:nth-last-child(-n+2) {
-  margin-top: -5rem;
+
+.skill {
+  text-align: center;
 }
-@media (min-width: 768px) {
-  .skills svg:nth-last-child(-n+2) {
-    margin: initial;
-  }
-}
-.skills svg:nth-last-child(-n+3) {
-  align-self: flex-end;
-}
-@media (min-width: 1360px) {
-  .skills svg:nth-last-child(-n+3) {
-    margin: 10rem auto 2.1875rem;
-  }
+
+.skill__svg-icon {
+  fill: var(--secondary);
+  background-color: #f1f1f1;
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
 }
 
 .project {
@@ -986,12 +973,15 @@ textarea {
   .projects {
     gap: 2rem;
     grid-template-columns: repeat(2, 1fr);
+    max-width: 50rem;
+    margin: 0 auto;
   }
 }
 @media (min-width: 1360px) {
   .projects {
-    gap: 48px;
+    gap: 3rem;
     grid-template-columns: repeat(3, 1fr);
+    max-width: 76.25rem;
   }
 }
 

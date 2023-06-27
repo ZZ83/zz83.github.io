@@ -7,9 +7,12 @@
     @include mq(medium) {
         gap: rem(32px);
         grid-template-columns: repeat(2, 1fr);
+        max-width: rem(800px);
+        margin: 0 auto;
     }
     @include mq(large) {
-        gap: 48px;
+        gap: rem(48px);
         grid-template-columns: repeat(3, 1fr);
+        max-width: rem(1220px);
     }
 }
