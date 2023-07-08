@@ -1,0 +1,50 @@
+@use '../01-tools' as *;
+
+.c-navigation {
+    height: 100%;
+    position: fixed;
+    top: -100%;
+    left: 0;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.85);
+    @extend %width-100;
+    &[data-visible="true"] {
+        top: rem(96px);
+    }
+    @include mq(medium) {
+        width: rem(490px);
+        height: initial;
+        position: static;
+        background-color: transparent;
+    }
+}
+
+    .c-navigation__inner {
+        height: rem(235px);
+        padding: rem(50px) 5%;
+        background-color: var(--tertiary);
+        @extend %width-100;
+        @extend %flex;
+        @extend %flex-d-c;
+        @extend %flex-jc-sb;
+        @include mq(medium) {
+            padding: 0;
+            height: initial;
+            flex-direction: row;
+            background-color: initial;
+            justify-content: space-between;
+        }
+    }
+
+    .c-navigation__link {
+        color: var(--primary);
+        font-weight: 400;
+        font-size: rem(24px);
+        line-height: rem(25px);
+        letter-spacing: rem(2px);
+        @include mq(medium) {
+            color: var(--tertiary-light);
+            font-size:   rem(14px);
+            line-height: rem(14px);
+        }
+    }

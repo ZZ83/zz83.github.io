@@ -1,0 +1,13 @@
+@use '../01-tools' as *;
+
+.o-container {
+    margin: 0 auto;
+    max-width: rem(1280px);
+    width: calc(100% - rem(48px));
+    @include mq(medium) {
+        width: calc(100% - rem(80px));
+    }
+    @include mq(large) {
+        width: calc(100% - rem(330px));
+    }
+}

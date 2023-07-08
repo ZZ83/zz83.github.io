@@ -1,0 +1,27 @@
+@use '../01-tools' as *;
+
+form { 
+    margin: 0 auto;
+    max-width:600px; 
+}
+
+label {
+    display: block;
+    font-size: rem(22.78px);
+    padding-bottom: rem(8px);
+    @include mq(medium) {
+        font-size: rem(25.63px);
+    }
+}
+
+input,
+textarea {
+    font-size:   rem(18px);
+	line-height: rem(28.83px);
+}
+
+textarea {
+    resize: vertical;
+	height: rem(248px);
+}
+    

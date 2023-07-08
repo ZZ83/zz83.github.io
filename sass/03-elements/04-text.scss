@@ -1,0 +1,42 @@
+@use '../01-tools' as *;
+
+h1,
+h2,
+p {
+    margin:  0;
+    padding: 0;
+}
+
+h1 {
+    font-size: rem(36.49px);
+    @include mq(medium) {
+        font-size: rem(83.23px);
+    }
+}
+
+h2 {
+    text-align: center;
+    font-size: rem(32.44px);
+    margin-bottom: rem(24px);
+    @include mq(medium) {
+        font-size: rem(46.18px);
+    }
+}
+
+h3 {
+    font-size: rem(28.83px);
+    @include mq(medium) {
+        font-size: rem(32.44px);
+    }
+}
+
+h4 {
+    font-size: rem(14.22px);
+    letter-spacing: rem(1px);
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+p {
+    line-height: rem(25.63px);
+}

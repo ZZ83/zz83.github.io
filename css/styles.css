@@ -365,10 +365,41 @@ html {
   box-sizing: inherit;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  background-color: orange;
+  font-family: "Saira Semi Condensed", sans-serif;
+  overflow-x: hidden;
+}
+
 /********************** Variables **********************/
 /********************** Functions **********************/
 /********************** Mixins **********************/
 /********************** PLACHOLDERS **********************/
+.c-navigation__inner, .l-header {
+  display: flex;
+}
+
+.l-header {
+  align-items: center;
+}
+
+.c-navigation__inner, .l-header {
+  justify-content: space-between;
+}
+
+.c-navigation__inner {
+  flex-direction: column;
+}
+
+.c-navigation, .c-navigation__inner {
+  width: 100%;
+}
+
 /********************** HELPER CLASSES **********************/
 .wrapper {
   width: 90%;
@@ -378,26 +409,6 @@ html {
 
 .bg-dbl {
   background-color: #04293A;
-}
-
-*,
-*:after,
-*:before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  position: relative;
-  color: #FFFFFF;
-  background-color: #041C32;
-  font-family: "Saira Semi Condensed", sans-serif;
-  overflow-x: hidden;
 }
 
 h1,
@@ -417,7 +428,6 @@ h1 {
 }
 
 h2 {
-  color: #FFC045;
   text-align: center;
   font-size: 2.0275rem;
   margin-bottom: 1.5rem;
@@ -458,10 +468,8 @@ li {
 
 a {
   font-weight: 500;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
   text-decoration: none;
-}
-a:hover {
-  color: #FFFFFF;
 }
 
 form {
@@ -489,6 +497,106 @@ textarea {
 textarea {
   resize: vertical;
   height: 15.5rem;
+}
+
+.o-background {
+  background-color: white;
+}
+
+.o-container {
+  margin: 0 auto;
+  max-width: 80rem;
+  width: calc(100% - 3rem);
+}
+@media (min-width: 768px) {
+  .o-container {
+    width: calc(100% - 5rem);
+  }
+}
+@media (min-width: 1360px) {
+  .o-container {
+    width: calc(100% - 20.625rem);
+  }
+}
+
+.f-mobileNavIcons {
+  cursor: pointer;
+  width: 1.5rem;
+  height: 1.25rem;
+  border: 0;
+  background-color: transparent;
+  background-image: url(../icon-hamburger.svg);
+  background-repeat: no-repeat;
+}
+.f-mobileNavIcons[aria-expanded=true] {
+  background-image: url(../icon-close.svg);
+}
+@media (min-width: 768px) {
+  .f-mobileNavIcons {
+    display: none;
+  }
+}
+
+.l-header {
+  color: black;
+  height: 6rem;
+}
+
+.c-navigation {
+  height: 100%;
+  position: fixed;
+  top: -100%;
+  left: 0;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+.c-navigation[data-visible=true] {
+  top: 6rem;
+}
+@media (min-width: 768px) {
+  .c-navigation {
+    width: 30.625rem;
+    height: initial;
+    position: static;
+    background-color: transparent;
+  }
+}
+
+.c-navigation__inner {
+  height: 14.6875rem;
+  padding: 3.125rem 5%;
+  background-color: var(--tertiary);
+}
+@media (min-width: 768px) {
+  .c-navigation__inner {
+    padding: 0;
+    height: initial;
+    flex-direction: row;
+    background-color: initial;
+    justify-content: space-between;
+  }
+}
+
+.c-navigation__link {
+  color: var(--primary);
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.5625rem;
+  letter-spacing: 0.125rem;
+}
+@media (min-width: 768px) {
+  .c-navigation__link {
+    color: var(--tertiary-light);
+    font-size: 0.875rem;
+    line-height: 0.875rem;
+  }
+}
+
+.f-logo {
+  color: black;
+  font-family: Kaushan Script, Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 32px;
 }
 
 /*# sourceMappingURL=styles.css.map */
