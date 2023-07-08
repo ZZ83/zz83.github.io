@@ -1,9 +1,0 @@
-@use '../abstracts' as *;
-
-.footer {
-	color: $orange;
-	height: rem(116px);
-	@extend %flex;
-	@extend %flex-ai-c;
-	@extend %flex-jc-c;
-}

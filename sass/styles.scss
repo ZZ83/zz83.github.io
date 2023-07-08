@@ -1,4 +1,2 @@
-@use 'atoms';
-@use 'base';
-@use 'molecules';
-@use 'organisms';
+@use '02-generic'  as *;
+@use '03-elements' as *;
