@@ -372,7 +372,6 @@ html {
 body {
   position: relative;
   background-color: orange;
-  font-family: "Saira Semi Condensed", sans-serif;
   overflow-x: hidden;
 }
 
@@ -519,18 +518,6 @@ textarea {
   }
 }
 
-.f-mobileNavIcons {
-  cursor: pointer;
-  width: 1.5rem;
-  height: 1.25rem;
-  border: 0;
-  background-color: transparent;
-  background-image: url(../icon-hamburger.svg);
-  background-repeat: no-repeat;
-}
-.f-mobileNavIcons[aria-expanded=true] {
-  background-image: url(../icon-close.svg);
-}
 @media (min-width: 768px) {
   .f-mobileNavIcons {
     display: none;
@@ -545,13 +532,14 @@ textarea {
 .c-navigation {
   height: 100%;
   position: fixed;
-  top: -100%;
-  left: 0;
+  top: 6rem;
+  right: -100%;
   z-index: 10;
+  transition: right 0.25s ease 0s;
   background-color: rgba(0, 0, 0, 0.85);
 }
 .c-navigation[data-visible=true] {
-  top: 6rem;
+  right: 0;
 }
 @media (min-width: 768px) {
   .c-navigation {
@@ -597,6 +585,42 @@ textarea {
   font-family: Kaushan Script, Arial, Helvetica, sans-serif;
   font-weight: 600;
   font-size: 32px;
+}
+
+button {
+  background: transparent;
+  border: none;
+}
+
+/* button one */
+.button-one {
+  --button-color: #333;
+  cursor: pointer;
+}
+
+.button-one .line {
+  transition: y 150ms ease-in 150ms, rotate 150ms ease-in, opacity 0ms 150ms;
+  transform-origin: center;
+}
+
+.button-one[aria-expanded=true] .line {
+  transition: y 150ms ease-in, rotate 150ms ease-in 150ms, opacity 0ms 150ms;
+}
+
+.button-one[aria-expanded=true] :is(.top, .bottom) {
+  y: 45;
+}
+
+.button-one[aria-expanded=true] .top {
+  rotate: 45deg;
+}
+
+.button-one[aria-expanded=true] .middle {
+  opacity: 0;
+}
+
+.button-one[aria-expanded=true] .bottom {
+  rotate: -45deg;
 }
 
 /*# sourceMappingURL=styles.css.map */

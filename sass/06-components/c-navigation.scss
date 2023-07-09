@@ -3,13 +3,14 @@
 .c-navigation {
     height: 100%;
     position: fixed;
-    top: -100%;
-    left: 0;
+    top: rem(96px);
+    right: -100%;
     z-index: 10;
+    transition: right 0.25s ease 0s;
     background-color: rgba(0, 0, 0, 0.85);
     @extend %width-100;
     &[data-visible="true"] {
-        top: rem(96px);
+        right: 0;
     }
     @include mq(medium) {
         width: rem(490px);
