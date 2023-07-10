@@ -378,6 +378,7 @@ html {
 body {
   position: relative;
   font-size: rem(15px);
+  font-family: Poppins, Arial, Helvetica, sans-serif;
 }
 
 /********************** Variables **********************/
@@ -506,16 +507,16 @@ button {
 }
 
 .o-background {
-  background-color: white;
   position: fixed;
   top: 0;
   width: 100%;
+  background-color: white;
 }
 
 .o-container {
   margin: 0 auto;
-  max-width: 80rem;
   width: calc(100% - 3rem);
+  max-width: 80rem;
 }
 @media (min-width: 768px) {
   .o-container {
@@ -533,23 +534,23 @@ button {
 }
 
 .c-navigation {
-  height: 100%;
   position: fixed;
+  z-index: 10;
   top: 6rem;
   right: -100%;
-  z-index: 10;
   transition: right 0.25s ease 0s;
   border-top: 3px solid var(--secondary-text);
+  height: 100%;
 }
 .c-navigation[data-visible=true] {
   right: 0;
 }
 @media (min-width: 768px) {
   .c-navigation {
+    position: static;
     border-top: none;
     width: 31.875rem;
     height: initial;
-    position: static;
     background-color: transparent;
   }
 }
@@ -559,24 +560,24 @@ button {
 }
 @media (min-width: 768px) {
   .c-navigation__inner {
-    padding: 0;
-    height: initial;
     flex-direction: row;
-    background-color: initial;
     justify-content: space-between;
+    height: initial;
+    padding: 0;
+    background-color: initial;
   }
 }
 
 .c-navigation__link {
   display: inline-block;
-  color: var(--secondary-text);
-  font-weight: 600;
+  margin-bottom: 2rem;
+  transition: color, border-bottom 0.3s;
   font-size: 0.75rem;
   line-height: 1.5rem;
+  font-weight: 600;
   letter-spacing: 0.1rem;
-  margin-bottom: 2rem;
   text-transform: uppercase;
-  transition: color, border-bottom 0.3s;
+  color: var(--secondary-text);
 }
 @media (min-width: 768px) {
   .c-navigation__link {
@@ -588,11 +589,84 @@ button {
   color: var(--accent);
 }
 
+.l-heroSection {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("../zz.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero {
+  margin-top: 6rem;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+.hero__intro {
+  margin-bottom: 0.5rem;
+}
+.hero span {
+  color: var(--accent);
+}
+
 .f-logo {
-  color: var(--primary-text);
+  font-size: 2rem;
   font-family: Kaushan Script, Arial, Helvetica, sans-serif;
   font-weight: 600;
-  font-size: 2rem;
+  color: var(--primary-text);
+}
+
+.btn-about {
+  margin-top: 2.5rem;
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  fill: white;
+}
+.btn-about:hover {
+  border: 2px solid var(--accent);
+  fill: var(--accent);
+}
+@media (min-width: 768px) {
+  .btn-about {
+    margin-top: 5rem;
+  }
+}
+
+.btn-projects {
+  display: block;
+  margin: 1rem auto 0;
+  border: 2px solid white;
+  border-radius: 24px;
+  width: fit-content;
+  min-width: 5rem;
+  padding: 0.625rem 1rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: white;
+}
+.btn-projects:hover {
+  background-color: white;
+  color: #041C32;
+}
+@media (min-width: 768px) {
+  .btn-projects {
+    margin-top: 2.5rem;
+  }
+}
+.btn-projects--p {
+  margin: 0;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  cursor: pointer;
+}
+.btn-projects--active {
+  background-color: white;
+  color: #041C32;
 }
 
 @media (min-width: 768px) {
@@ -602,8 +676,8 @@ button {
 }
 
 .f-hamburgerMenu.-line {
-  transition: y 150ms ease-in 150ms, rotate 150ms ease-in, opacity 0ms 150ms;
   transform-origin: center;
+  transition: y 150ms ease-in 150ms, rotate 150ms ease-in, opacity 0ms 150ms;
 }
 
 .f-hamburgerMenu[aria-expanded=true] .-line {

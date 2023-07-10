@@ -1,8 +1,8 @@
 @use '../01-tools' as *;
 
 .f-logo {
-    color: var(--primary-text);
+    font-size: rem(32px);
     font-family: Kaushan Script, Arial, Helvetica, sans-serif;
     font-weight: 600; 
-    font-size: rem(32px);
+    color: var(--primary-text);
 }

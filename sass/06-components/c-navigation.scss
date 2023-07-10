@@ -1,51 +1,51 @@
 @use '../01-tools' as *;
 
 .c-navigation {
-    height: 100%;
     position: fixed;
+    z-index: 10;
     top: rem(96px);
     right: -100%;
-    z-index: 10;
     transition: right 0.25s ease 0s;
     border-top: 3px solid var(--secondary-text);
+    height: 100%;
     @extend %width-100;
     &[data-visible="true"] {
         right: 0;
     }
     @include mq(medium) {
+        position: static;
         border-top: none;
         width: rem(510px);
         height: initial;
-        position: static;
         background-color: transparent;
     }
 }
 
     .c-navigation__inner {
-        padding: rem(32px) rem(24px) 0;
         @extend %width-100;
         @extend %flex;
         @extend %flex-d-c;
         @extend %flex-jc-sb;
+        padding: rem(32px) rem(24px) 0;
         @include mq(medium) {
-            padding: 0;
-            height: initial;
             flex-direction: row;
-            background-color: initial;
             justify-content: space-between;
+            height: initial;
+            padding: 0;
+            background-color: initial;
         }
     }
 
     .c-navigation__link {
         display: inline-block;
-        color: var(--secondary-text);
-        font-weight: 600;
+        margin-bottom: rem(32px);
+        transition: color, border-bottom 0.30s;
         font-size: rem(12px);
         line-height: rem(24px);
+        font-weight: 600;
         letter-spacing: 0.1rem;
-        margin-bottom: rem(32px);
         text-transform: uppercase;
-        transition: color, border-bottom 0.30s;
+        color: var(--secondary-text);
         @include mq(medium) {
             margin-bottom: initial;
         }  

@@ -1,8 +1,8 @@
 @use '../01-tools' as *;
 
 .l-header {
-    height: rem(96px);
     @extend %flex;
     @extend %flex-ai-c;
     @extend %flex-jc-sb;
+    height: rem(96px);
 }

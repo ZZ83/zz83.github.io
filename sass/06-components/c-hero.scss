@@ -1,0 +1,24 @@
+@use '../01-tools' as *;
+
+.l-heroSection {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    background:linear-gradient(0deg, rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url("../zz.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero {
+    margin-top: rem(96px);
+    width: 100%;
+    text-align: center;
+    color: white;
+    &__intro {
+        margin-bottom: rem(8px);
+    }
+    span {
+        color: var(--accent);
+    }
+}

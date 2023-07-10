@@ -2,8 +2,8 @@
 
 .o-container {
     margin: 0 auto;
-    max-width: rem(1280px);
     width: calc(100% - rem(48px));
+    max-width: rem(1280px);
     @include mq(medium) {
         width: calc(100% - rem(80px));
     }

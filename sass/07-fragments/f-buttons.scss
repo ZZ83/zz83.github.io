@@ -1,0 +1,48 @@
+@use '../01-tools' as *;
+
+.btn-about {
+    margin-top: rem(40px);
+    border: 2px solid white;
+    border-radius: 50%;
+    width:  rem(40px);
+    height: rem(40px);
+    fill: white;
+    &:hover {
+        border: 2px solid var(--accent); 
+        fill: var(--accent);
+    }
+    @include mq(medium) {
+        margin-top: rem(80px);
+    }
+}
+
+
+.btn-projects {
+    display: block;
+    margin: rem(16px) auto 0;
+    border: 2px solid white;
+    border-radius: 24px;
+    width: fit-content;
+    min-width: rem(80px);
+    padding: rem(10px) rem(16px);
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: white;
+    &:hover {
+        background-color: white;
+        color: $dark-blue;
+    }
+    @include mq(medium) {
+        margin-top: rem(40px);
+    }
+    &--p {
+        margin: 0;
+        padding-top: rem(8px);
+        padding-bottom: rem(8px);
+        cursor: pointer;
+    }
+    &--active {
+        background-color: white;
+        color: $dark-blue;
+    }
+}
