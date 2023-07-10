@@ -7,13 +7,15 @@
     right: -100%;
     z-index: 10;
     transition: right 0.25s ease 0s;
-    background-color: rgba(0, 0, 0, 0.85);
+    background-color: white;
+    border-top: 3px solid var(--primary-text);
     @extend %width-100;
     &[data-visible="true"] {
         right: 0;
     }
     @include mq(medium) {
-        width: rem(490px);
+        border-top: none;
+        width: rem(510px);
         height: initial;
         position: static;
         background-color: transparent;
@@ -21,9 +23,7 @@
 }
 
     .c-navigation__inner {
-        height: rem(235px);
-        padding: rem(50px) 5%;
-        background-color: var(--tertiary);
+        padding: rem(32px) rem(24px) 0;
         @extend %width-100;
         @extend %flex;
         @extend %flex-d-c;
@@ -38,14 +38,19 @@
     }
 
     .c-navigation__link {
-        color: var(--primary);
-        font-weight: 400;
-        font-size: rem(24px);
-        line-height: rem(25px);
-        letter-spacing: rem(2px);
+        display: inline-block;
+        color: var(--primary-text);
+        font-weight: 500;
+        font-size: rem(16px);
+        line-height: rem(24px);
+        margin-bottom: rem(32px);
+        letter-spacing: 0.1rem;
+        transition: color, border-bottom 0.30s;
         @include mq(medium) {
-            color: var(--tertiary-light);
-            font-size:   rem(14px);
-            line-height: rem(14px);
-        }
+            margin-bottom: initial;
+        }  
+    } 
+
+    .c-navigation__link:hover {
+        color: var(--accent); 
     }

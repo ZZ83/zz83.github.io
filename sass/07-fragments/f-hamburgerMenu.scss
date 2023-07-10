@@ -1,0 +1,32 @@
+@use '../01-tools' as *;
+
+.f-hamburgerMenu {
+    @include mq(medium) {
+        display: none;
+    }
+}
+  
+.f-hamburgerMenu.-line {
+    transition: y 150ms ease-in 150ms, rotate 150ms ease-in, opacity 0ms 150ms;
+    transform-origin: center;
+}
+
+.f-hamburgerMenu[aria-expanded="true"] .-line {
+    transition: y 150ms ease-in, rotate 150ms ease-in 150ms, opacity 0ms 150ms;
+}
+
+.f-hamburgerMenu[aria-expanded="true"] :is(.-top, .-bottom) {
+    y: 45;
+}
+
+.f-hamburgerMenu[aria-expanded="true"] .-top {
+    rotate: 45deg;
+}
+
+.f-hamburgerMenu[aria-expanded="true"] .-middle {
+    opacity: 0;
+}
+
+.f-hamburgerMenu[aria-expanded="true"] .-bottom {
+    rotate: -45deg;
+}

@@ -1,6 +1,6 @@
 const body      = document.querySelector('body');
 const mainNav   = document.querySelector('.c-navigation');
-const navToggle = document.querySelector('.f-mobileNavIcons');
+const navToggle = document.querySelector('.f-hamburgerMenu');
 
 navToggle.addEventListener('click', () => {
     const vis = mainNav.getAttribute("data-visible");
@@ -15,22 +15,3 @@ navToggle.addEventListener('click', () => {
         // body.style.overflowY = "scroll"
     }
 })
-
-
-
-
-const buttons = document.querySelectorAll("button");
-
-buttons.forEach((button) => {
-  button.addEventListener("click", () => {
-    const currentState = button.getAttribute("data-state");
-
-    if (!currentState || currentState === "closed") {
-      button.setAttribute("data-state", "opened");
-      button.setAttribute("aria-expanded", "true");
-    } else {
-      button.setAttribute("data-state", "closed");
-      button.setAttribute("aria-expanded", "false");
-    }
-  });
-});
