@@ -1,7 +1,6 @@
 @use '../01-tools' as *;
 
 .l-header {
-    color: black;
     height: rem(96px);
     @extend %flex;
     @extend %flex-ai-c;

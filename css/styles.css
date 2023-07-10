@@ -367,6 +367,7 @@ html {
 
 :root {
   --primary-text: #292929;
+  --secondary-text: #757575;
   --accent: #ff5e94;
 }
 
@@ -376,8 +377,7 @@ html {
 
 body {
   position: relative;
-  background-color: orange;
-  overflow-x: hidden;
+  font-size: rem(15px);
 }
 
 /********************** Variables **********************/
@@ -507,6 +507,9 @@ button {
 
 .o-background {
   background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .o-container {
@@ -526,7 +529,6 @@ button {
 }
 
 .l-header {
-  color: black;
   height: 6rem;
 }
 
@@ -537,8 +539,7 @@ button {
   right: -100%;
   z-index: 10;
   transition: right 0.25s ease 0s;
-  background-color: white;
-  border-top: 3px solid var(--primary-text);
+  border-top: 3px solid var(--secondary-text);
 }
 .c-navigation[data-visible=true] {
   right: 0;
@@ -568,12 +569,13 @@ button {
 
 .c-navigation__link {
   display: inline-block;
-  color: var(--primary-text);
-  font-weight: 500;
-  font-size: 1rem;
+  color: var(--secondary-text);
+  font-weight: 600;
+  font-size: 0.75rem;
   line-height: 1.5rem;
-  margin-bottom: 2rem;
   letter-spacing: 0.1rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
   transition: color, border-bottom 0.3s;
 }
 @media (min-width: 768px) {
