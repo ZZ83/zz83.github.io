@@ -1,0 +1,33 @@
+@use '../01-tools' as *;
+
+.c-about {
+    @include mq(medium) {
+        margin: auto;
+        max-width: rem(800px);
+    }
+    @include mq(large) {
+        display: flex;
+        justify-content: space-between;
+        max-width: rem(1280px);
+    }
+    &__image {
+        width: 100%;
+        margin-bottom: rem(16px);
+        @include mq(large) {
+            width:  45%;
+            height: auto;
+            margin-bottom: 0;
+        }
+    } &__inner {
+        padding: rem(2px);
+        @include mq(large) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 50%;
+        }
+    }
+    &__paragraph {
+        padding-bottom: rem(24px);
+    }
+}

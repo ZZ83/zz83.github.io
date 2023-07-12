@@ -1,6 +1,20 @@
 .o-background {
+    width: 100%;
+}
+
+.o-background.-primary {
+    background-color: var(--primary-bg);
+}
+
+.o-background.-secondary {
+    background-color: var(--secondary-bg);
+}
+
+.o-background.-tertiary {
+    background-color: var(--tertiary-bg);
+}
+
+.o-background.-fixed {
     position: fixed;
     top: 0;
-    width: 100%;
-    background-color: white;
 }

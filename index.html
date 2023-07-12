@@ -18,7 +18,7 @@
     <body class="page">
 
         <!-- HEADER BACKGROUND -->
-        <div class="o-background">
+        <div class="o-background -tertiary -fixed">
             <!-- HEADER -->
             <header class="o-container l-header">
 
@@ -37,8 +37,7 @@
                 <!-- NAVIGATION -->
                 <nav id="navigation" class="c-navigation" data-visible="false">
                     <ul class="c-navigation__inner">
-                        <li><a class="c-navigation__link" href="html/about.html">Home</a></li>
-                        <li><a class="c-navigation__link" href="html/locations.html">About</a></li>
+                        <li><a class="c-navigation__link" href="#about">About</a></li>
                         <li><a class="c-navigation__link" href="html/contact.html">Skills</a></li>
                         <li><a class="c-navigation__link" href="html/contact.html">Projects</a></li>
                         <li><a class="c-navigation__link" href="html/contact.html">Contact</a></li>
@@ -53,10 +52,10 @@
             <section class="l-heroSection">
                 <!-- HERO -->
                 <div class="hero">
-                    <h1 class="hero__intro">Hi, I am <span>Zekel Keys</span></h1>
+                    <h1 class="hero__intro" style="font-family: Kaushan Script, Arial, Helvetica, sans-serif;;">Hi, I am <span>Zekel Keys</span></h1>
                     <h2 class="position__text" style="font-weight: 400;">Front-End Developer</h2>
                      <!-- PROJECTS LINK -->
-                    <a href="#projects" class="btn-projects">View Projects</a>
+                    <!-- <a href="#projects" class="btn-projects">View Projects</a> -->
                     <!-- ABOUT LINK -->
                     <a href="#about">
                         <svg class="btn-about" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve">
@@ -67,7 +66,33 @@
                 </div>
             </section>
 
-            <section id="about" style="height: 100vh; background-color: gray;"></section>
+
+            <div style="background-color: #f9f9f9;">
+                <section id="about"  class="l-aboutSection o-container" s>
+                    <h2>About Me</h2>
+
+
+                     <!-- ABOUT  -->
+                     <div class="c-about">
+
+                        <img class="c-about__image" src="images/self.jpg" alt="Zekel Keys">
+                        
+                        <div class="c-about__inner">
+                            <p class="c-about__paragraph">I am a self-taught Front-End Developer located in Southern California. I have experience creating responsive and visually appealing websites and web applications with HTML, CSS, and JavaScript. I also have a strong attention to detail and I enjoy creating user-friendly interfaces that enhance the overall user experience.</p>
+                            <p class="c-about__paragraph">As a passionate lifelong learner, I embrace the challenges that come with acquiring new skills and knowledge, and I am always open to learning new tools, frameworks, and techniques to refine my craft.</p>
+                            <p class="c-about__paragraph">In my free time, I indulge in my love for gaming by playing titles such as World of Warcraft, Forza, and Mass Effect, among others. Additionally, I find solace in nature and often take to the trails, whether hiking or mountain biking, to explore and immerse myself in the outdoors.</p>
+                        </div>
+
+                        
+                    </div>
+
+
+                </section>
+            </div>
+
+            <section style="height: 100vh; background-color: #f5f5f5;">
+                
+            </section>
              
 
         </main>

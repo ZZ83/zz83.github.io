@@ -1,0 +1,9 @@
+@use '../01-tools' as *;
+
+.l-aboutSection {
+    scroll-margin-top: rem(96px);
+    padding: rem(40px) 0;
+    @include mq(medium) {
+        padding: rem(80px) 0;
+    }
+}

@@ -15,11 +15,15 @@ h1 {
 }
 
 h2 {
-    text-align: center;
-    font-size: rem(32.44px);
+    font-size: rem(32px);
     margin-bottom: rem(24px);
+    font-weight: 400;
+    font-family: Kaushan Script, Arial, Helvetica, sans-serif;
     @include mq(medium) {
-        font-size: rem(46.18px);
+        font-size: rem(40px);
+    }
+    @include mq(large) {
+        margin-bottom: rem(40px);
     }
 }
 

@@ -369,6 +369,9 @@ html {
   --primary-text: #292929;
   --secondary-text: #757575;
   --accent: #ff5e94;
+  --primary-bg: #fcfcfc;
+  --secondary-bg: #f9f9f9;
+  --tertiary-bg: #ffffff;
 }
 
 html {
@@ -377,7 +380,6 @@ html {
 
 body {
   position: relative;
-  font-size: rem(15px);
   font-family: Poppins, Arial, Helvetica, sans-serif;
 }
 
@@ -433,13 +435,19 @@ h1 {
 }
 
 h2 {
-  text-align: center;
-  font-size: 2.0275rem;
+  font-size: 2rem;
   margin-bottom: 1.5rem;
+  font-weight: 400;
+  font-family: Kaushan Script, Arial, Helvetica, sans-serif;
 }
 @media (min-width: 768px) {
   h2 {
-    font-size: 2.88625rem;
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 1360px) {
+  h2 {
+    margin-bottom: 2.5rem;
   }
 }
 
@@ -507,10 +515,24 @@ button {
 }
 
 .o-background {
+  width: 100%;
+}
+
+.o-background.-primary {
+  background-color: var(--primary-bg);
+}
+
+.o-background.-secondary {
+  background-color: var(--secondary-bg);
+}
+
+.o-background.-tertiary {
+  background-color: var(--tertiary-bg);
+}
+
+.o-background.-fixed {
   position: fixed;
   top: 0;
-  width: 100%;
-  background-color: white;
 }
 
 .o-container {
@@ -531,6 +553,16 @@ button {
 
 .l-header {
   height: 6rem;
+}
+
+.l-aboutSection {
+  scroll-margin-top: 6rem;
+  padding: 2.5rem 0;
+}
+@media (min-width: 768px) {
+  .l-aboutSection {
+    padding: 5rem 0;
+  }
 }
 
 .c-navigation {
@@ -612,6 +644,45 @@ button {
   color: var(--accent);
 }
 
+@media (min-width: 768px) {
+  .c-about {
+    margin: auto;
+    max-width: 50rem;
+  }
+}
+@media (min-width: 1360px) {
+  .c-about {
+    display: flex;
+    justify-content: space-between;
+    max-width: 80rem;
+  }
+}
+.c-about__image {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+@media (min-width: 1360px) {
+  .c-about__image {
+    width: 45%;
+    height: auto;
+    margin-bottom: 0;
+  }
+}
+.c-about__inner {
+  padding: 0.125rem;
+}
+@media (min-width: 1360px) {
+  .c-about__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+  }
+}
+.c-about__paragraph {
+  padding-bottom: 1.5rem;
+}
+
 .f-logo {
   font-size: 2rem;
   font-family: Kaushan Script, Arial, Helvetica, sans-serif;
@@ -620,7 +691,6 @@ button {
 }
 
 .btn-about {
-  margin-top: 2.5rem;
   border: 2px solid white;
   border-radius: 50%;
   width: 2.5rem;
@@ -631,44 +701,6 @@ button {
   border: 2px solid var(--accent);
   fill: var(--accent);
 }
-@media (min-width: 768px) {
-  .btn-about {
-    margin-top: 5rem;
-  }
-}
-
-.btn-projects {
-  display: block;
-  margin: 1rem auto 0;
-  border: 2px solid white;
-  border-radius: 24px;
-  width: fit-content;
-  min-width: 5rem;
-  padding: 0.625rem 1rem;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-  color: white;
-}
-.btn-projects:hover {
-  background-color: white;
-  color: #041C32;
-}
-@media (min-width: 768px) {
-  .btn-projects {
-    margin-top: 2.5rem;
-  }
-}
-.btn-projects--p {
-  margin: 0;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  cursor: pointer;
-}
-.btn-projects--active {
-  background-color: white;
-  color: #041C32;
-}
-
 @media (min-width: 768px) {
   .f-hamburgerMenu {
     display: none;
