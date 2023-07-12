@@ -555,6 +555,16 @@ button {
   height: 6rem;
 }
 
+.l-heroSection {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("../zz.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .l-aboutSection {
   scroll-margin-top: 6rem;
   padding: 2.5rem 0;
@@ -619,16 +629,6 @@ button {
 
 .c-navigation__link:hover {
   color: var(--accent);
-}
-
-.l-heroSection {
-  display: flex;
-  align-items: center;
-  height: 100vh;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("../zz.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .hero {
