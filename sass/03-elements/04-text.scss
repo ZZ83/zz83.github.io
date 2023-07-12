@@ -1,24 +1,30 @@
 @use '../01-tools' as *;
 
 h1,
-h2,
-p {
-    margin:  0;
-    padding: 0;
+h2 {
+    font-family: Kaushan Script, Arial, Helvetica, sans-serif;
 }
 
-h1 {
-    font-size: rem(36.49px);
+p {
+    line-height: rem(26px);
+}
+
+ h1,
+.h1 {
+    font-size: rem(36px);
+    @include mq(small) {
+        font-size: rem(40px);
+    }
     @include mq(medium) {
-        font-size: rem(83.23px);
+        font-size: rem(80px);
     }
 }
 
-h2 {
+ h2,
+.h2 {
     font-size: rem(32px);
-    margin-bottom: rem(24px);
     font-weight: 400;
-    font-family: Kaushan Script, Arial, Helvetica, sans-serif;
+    margin-bottom: rem(24px);
     @include mq(medium) {
         font-size: rem(40px);
     }
@@ -27,20 +33,14 @@ h2 {
     }
 }
 
-h3 {
-    font-size: rem(28.83px);
+ h3,
+.h3 {
+    font-size: rem(24px);
     @include mq(medium) {
-        font-size: rem(32.44px);
+        font-size: rem(32px);
     }
 }
 
-h4 {
-    font-size: rem(14.22px);
-    letter-spacing: rem(1px);
-    text-transform: uppercase;
-    font-weight: 500;
-}
-
-p {
-    line-height: rem(25.63px);
+.kaushan {
+    font-family: Kaushan Script, Arial, Helvetica, sans-serif;
 }

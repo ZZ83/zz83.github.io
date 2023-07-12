@@ -1,17 +1,13 @@
 @use '../01-tools' as *;
 
 .btn-about {
-    // margin-top: rem(40px);
-    border: 2px solid white;
-    border-radius: 50%;
     width:  rem(40px);
     height: rem(40px);
-    fill: white;
+    border: 2px solid var(--tertiary-bg);
+    border-radius: 50%;
+    fill: var(--tertiary-bg);
     &:hover {
         border: 2px solid var(--accent); 
         fill: var(--accent);
-    }
-    @include mq(medium) {
-        // margin-top: rem(80px);
     }
 }

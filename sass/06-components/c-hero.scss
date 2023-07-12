@@ -1,14 +1,27 @@
 @use '../01-tools' as *;
 
-.hero {
+.c-hero {
     margin-top: rem(96px);
     width: 100%;
     text-align: center;
-    color: white;
-    &__intro {
+    color: var(--tertiary-bg);
+}
+
+    .c-hero__intro {
         margin-bottom: rem(8px);
     }
-    span {
+
+    .c-hero__name {
         color: var(--accent);
     }
-}
+
+    .c-hero__role {
+        display: block;
+        font-size: rem(24px);
+        color: inherit;
+        font-weight: 400;
+        @include mq(medium) {
+            margin-top: rem(12px);
+            font-size: rem(44px);
+        }
+    }

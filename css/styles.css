@@ -419,56 +419,63 @@ body {
 }
 
 h1,
-h2,
-p {
-  margin: 0;
-  padding: 0;
+h2 {
+  font-family: Kaushan Script, Arial, Helvetica, sans-serif;
 }
 
-h1 {
-  font-size: 2.280625rem;
+p {
+  line-height: 1.625rem;
+}
+
+h1,
+.h1 {
+  font-size: 2.25rem;
+}
+@media (min-width: 375px) {
+  h1,
+  .h1 {
+    font-size: 2.5rem;
+  }
 }
 @media (min-width: 768px) {
-  h1 {
-    font-size: 5.201875rem;
+  h1,
+  .h1 {
+    font-size: 5rem;
   }
 }
 
-h2 {
+h2,
+.h2 {
   font-size: 2rem;
-  margin-bottom: 1.5rem;
   font-weight: 400;
-  font-family: Kaushan Script, Arial, Helvetica, sans-serif;
+  margin-bottom: 1.5rem;
 }
 @media (min-width: 768px) {
-  h2 {
+  h2,
+  .h2 {
     font-size: 2.5rem;
   }
 }
 @media (min-width: 1360px) {
-  h2 {
+  h2,
+  .h2 {
     margin-bottom: 2.5rem;
   }
 }
 
-h3 {
-  font-size: 1.801875rem;
+h3,
+.h3 {
+  font-size: 1.5rem;
 }
 @media (min-width: 768px) {
-  h3 {
-    font-size: 2.0275rem;
+  h3,
+  .h3 {
+    font-size: 2rem;
   }
 }
 
-h4 {
-  font-size: 0.88875rem;
-  letter-spacing: 0.0625rem;
-  text-transform: uppercase;
-  font-weight: 500;
-}
-
-p {
-  line-height: 1.601875rem;
+.kaushan {
+  font-family: Kaushan Script, Arial, Helvetica, sans-serif;
 }
 
 ul {
@@ -631,17 +638,32 @@ button {
   color: var(--accent);
 }
 
-.hero {
+.c-hero {
   margin-top: 6rem;
   width: 100%;
   text-align: center;
-  color: white;
+  color: var(--tertiary-bg);
 }
-.hero__intro {
+
+.c-hero__intro {
   margin-bottom: 0.5rem;
 }
-.hero span {
+
+.c-hero__name {
   color: var(--accent);
+}
+
+.c-hero__role {
+  display: block;
+  font-size: 1.5rem;
+  color: inherit;
+  font-weight: 400;
+}
+@media (min-width: 768px) {
+  .c-hero__role {
+    margin-top: 0.75rem;
+    font-size: 2.75rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -685,22 +707,22 @@ button {
 
 .f-logo {
   font-size: 2rem;
-  font-family: Kaushan Script, Arial, Helvetica, sans-serif;
   font-weight: 600;
   color: var(--primary-text);
 }
 
 .btn-about {
-  border: 2px solid white;
-  border-radius: 50%;
   width: 2.5rem;
   height: 2.5rem;
-  fill: white;
+  border: 2px solid var(--tertiary-bg);
+  border-radius: 50%;
+  fill: var(--tertiary-bg);
 }
 .btn-about:hover {
   border: 2px solid var(--accent);
   fill: var(--accent);
 }
+
 @media (min-width: 768px) {
   .f-hamburgerMenu {
     display: none;
