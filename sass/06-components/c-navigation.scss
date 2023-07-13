@@ -8,6 +8,7 @@
     transition: right 0.25s ease 0s;
     border-top: 3px solid var(--secondary-text);
     height: 100%;
+    background-color: var(--tertiary-bg);
     @extend %width-100;
     &[data-visible="true"] {
         right: 0;
@@ -15,7 +16,8 @@
     @include mq(medium) {
         position: static;
         border-top: none;
-        width: rem(510px);
+        width: 60%;
+        max-width: rem(510px);
         height: initial;
         background-color: transparent;
     }

@@ -15,13 +15,13 @@
     <link rel="stylesheet" href="css/styles.css">
     <title>Zekel Keys Portfolio</title>
 </head>
-    <body class="page">
+    <body id="top" class="page">
         <!-- HEADER BACKGROUND -->
         <div class="o-background -tertiary -fixed">
             <!-- HEADER -->
             <header class="o-container l-header">
                 <!-- LOGO -->
-                <a href="index.html" class="f-logo kaushan">Zekel</a>
+                <a href="#top" class="f-logo kaushan">Zekel</a>
                 <!-- HAMBURGER MENU -->
                 <button class="f-hamburgerMenu" aria-controls="navigation" aria-expanded="false" aria-label="Navigation">
                     <svg fill="#292929" viewBox="0 0 100 100" width="40">
@@ -34,9 +34,9 @@
                 <nav id="navigation" class="c-navigation" data-visible="false">
                     <ul class="c-navigation__inner">
                         <li><a class="c-navigation__link" href="#about">About</a></li>
-                        <li><a class="c-navigation__link" href="html/contact.html">Skills</a></li>
-                        <li><a class="c-navigation__link" href="html/contact.html">Projects</a></li>
-                        <li><a class="c-navigation__link" href="html/contact.html">Contact</a></li>
+                        <li><a class="c-navigation__link" href="#skills">Skills</a></li>
+                        <li><a class="c-navigation__link" href="#portfolio">Projects</a></li>
+                        <li><a class="c-navigation__link" href="#contact">Contact</a></li>
                     </ul>
                 </nav>
             </header>
@@ -51,7 +51,7 @@
                     <span class="c-hero__role h2 kaushan">Front-End Developer</span>
                     <!-- ABOUT LINK -->
                     <a href="#about">
-                        <svg class="btn-about" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve">
+                        <svg class="f-btn-about" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve">
                             <path style="fill:transparent" d="M256 504C119.248 504 8 392.752 8 256S119.248 8 256 8s248 111.248 248 248-111.248 248-248 248z"/>
                             <path    d="M416.064 214.656 256 378.016 95.936 214.656l49.968-48.8L256 278.208l110.096-112.352z"/>
                         </svg>
@@ -76,7 +76,7 @@
                 </section>
             </div>
 
-            <section style="height: 100vh; background-color: #f5f5f5;"></section>
+            <section id="skills" style="height: 100vh; background-color: #f5f5f5;"></section>
         </main>
         <script src="script.js"></script>
     </body>

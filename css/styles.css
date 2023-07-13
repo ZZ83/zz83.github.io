@@ -590,6 +590,7 @@ button {
   transition: right 0.25s ease 0s;
   border-top: 3px solid var(--secondary-text);
   height: 100%;
+  background-color: var(--tertiary-bg);
 }
 .c-navigation[data-visible=true] {
   right: 0;
@@ -598,7 +599,8 @@ button {
   .c-navigation {
     position: static;
     border-top: none;
-    width: 31.875rem;
+    width: 60%;
+    max-width: 31.875rem;
     height: initial;
     background-color: transparent;
   }
@@ -711,14 +713,14 @@ button {
   color: var(--primary-text);
 }
 
-.btn-about {
+.f-btn-about {
   width: 2.5rem;
   height: 2.5rem;
   border: 2px solid var(--tertiary-bg);
   border-radius: 50%;
   fill: var(--tertiary-bg);
 }
-.btn-about:hover {
+.f-btn-about:hover {
   border: 2px solid var(--accent);
   fill: var(--accent);
 }
