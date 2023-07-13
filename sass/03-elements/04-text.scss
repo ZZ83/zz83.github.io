@@ -35,9 +35,9 @@ p {
 
  h3,
 .h3 {
-    font-size: rem(24px);
-    @include mq(medium) {
-        font-size: rem(32px);
+    font-size: rem(16px);
+    @include mq(small) {
+        font-size: rem(20px);
     }
 }
 

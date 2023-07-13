@@ -465,12 +465,12 @@ h2,
 
 h3,
 .h3 {
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 375px) {
   h3,
   .h3 {
-    font-size: 2rem;
+    font-size: 1.25rem;
   }
 }
 
@@ -550,11 +550,23 @@ button {
 @media (min-width: 768px) {
   .o-container {
     width: calc(100% - 5rem);
+    max-width: 50rem;
   }
 }
 @media (min-width: 1360px) {
   .o-container {
     width: calc(100% - 20.625rem);
+    max-width: 80rem;
+  }
+}
+
+.o-section {
+  scroll-margin-top: 6rem;
+  padding: 2.5rem 0;
+}
+@media (min-width: 768px) {
+  .o-section {
+    padding: 5rem 0;
   }
 }
 
@@ -570,16 +582,6 @@ button {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.l-aboutSection {
-  scroll-margin-top: 6rem;
-  padding: 2.5rem 0;
-}
-@media (min-width: 768px) {
-  .l-aboutSection {
-    padding: 5rem 0;
-  }
 }
 
 .c-navigation {
@@ -668,17 +670,10 @@ button {
   }
 }
 
-@media (min-width: 768px) {
-  .c-about {
-    margin: auto;
-    max-width: 50rem;
-  }
-}
 @media (min-width: 1360px) {
   .c-about {
     display: flex;
     justify-content: space-between;
-    max-width: 80rem;
   }
 }
 .c-about__image {
@@ -705,6 +700,36 @@ button {
 }
 .c-about__paragraph {
   padding-bottom: 1.5rem;
+}
+
+.skills {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+@media (min-width: 768px) {
+  .skills {
+    grid-template-columns: repeat(3, 9.375rem);
+    justify-content: space-between;
+    row-gap: 5rem;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1360px) {
+  .skills {
+    grid-template-columns: repeat(4, 9.375rem);
+  }
+}
+
+.skill {
+  text-align: center;
+}
+
+.skill__svg-icon {
+  background-color: rgb(228, 228, 228);
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
 }
 
 .f-logo {

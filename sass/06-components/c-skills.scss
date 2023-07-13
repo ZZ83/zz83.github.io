@@ -1,0 +1,25 @@
+@use '../01-tools' as *;
+
+.skills {
+    display: grid;
+    gap: rem(32px);
+    grid-template-columns: repeat(2, 1fr);
+    @include mq(medium) {
+        grid-template-columns: repeat(3, rem(150px));
+        justify-content: space-between;
+        row-gap: rem(80px);
+        margin: 0 auto;
+    }
+    @include mq(large) {
+        grid-template-columns: repeat(4, rem(150px));
+    } 
+}
+    .skill {
+        text-align: center;
+    }
+        .skill__svg-icon {
+            background-color: rgb(228, 228, 228);
+            padding: rem(24px);
+            border-radius: 10px;
+            margin-bottom: rem(16px);
+        }

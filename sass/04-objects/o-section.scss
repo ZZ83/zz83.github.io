@@ -1,6 +1,6 @@
 @use '../01-tools' as *;
 
-.l-aboutSection {
+.o-section {
     scroll-margin-top: rem(96px);
     padding: rem(40px) 0;
     @include mq(medium) {
