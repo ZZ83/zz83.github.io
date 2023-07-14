@@ -538,7 +538,7 @@ button {
 }
 
 .o-background.-fixed {
-  position: fixed;
+  position: sticky;
   z-index: 99;
   top: 0;
 }
@@ -654,6 +654,10 @@ button {
   .c-navigation__link {
     margin-bottom: initial;
   }
+}
+
+.c-navigation__link.-project {
+  margin-bottom: initial;
 }
 
 .c-navigation__link:hover {
@@ -803,6 +807,88 @@ button {
   .project__header {
     font-size: 1.5rem;
   }
+}
+
+.c-presentation {
+  margin: 0 auto;
+  max-width: 50rem;
+}
+
+.c-presentation__image {
+  width: 100%;
+}
+
+.c-presentation__header,
+.c-presentation__subheader {
+  font-family: Poppins;
+}
+
+.c-presentation__header {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+@media (min-width: 768px) {
+  .c-presentation__header {
+    font-size: 2.5rem;
+  }
+}
+
+.c-presentation__subheader {
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: var(--primary-text);
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+@media (min-width: 768px) {
+  .c-presentation__subheader {
+    font-size: 1.75rem;
+  }
+}
+
+.c-presentation__paragraph {
+  color: #757575;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+@media (min-width: 768px) {
+  .c-presentation__paragraph {
+    font-size: 1rem;
+  }
+}
+
+.c-presentation__paragraph.-space {
+  margin-top: 1rem;
+}
+
+.view {
+  font-size: 0.75rem;
+  display: inline-block;
+  border-bottom: 0.1875rem solid var(--accent);
+  letter-spacing: 0.1rem;
+  line-height: 2rem;
+  color: var(--primary-text);
+  margin-bottom: 1rem;
+}
+@media (min-width: 768px) {
+  .view {
+    font-size: 0.875rem;
+  }
+}
+
+.view.-code {
+  margin-right: 1rem;
+}
+@media (min-width: 768px) {
+  .view.-code {
+    margin-right: 2rem;
+  }
+}
+
+.view:hover {
+  color: var(--accent);
 }
 
 .f-logo {
