@@ -185,19 +185,27 @@
             <!-- CONTACT SECTION BACKGROUND -->
             <div class="o-background -primary">
                 <!-- CONTACT SECTION -->
-                <section id="contact"  class="o-section o-container">
-                    <h2>Contant Me</h2>
+                <section id="contact"  class="o-section o-container -contact">
+                    <h2>Contact Me</h2>
                     <div class="contact">
-                        <div class="contact__inner">
-                            <p class="contact__paragraph" style="max-width: 700px;">
-                                Hello again, and thanks for visiting my website. I am currently looking for new job opportunities/freelance projects. 
-                                If you know of any openings or would like to hire me, I would greatly appreciate it if you could contact 
-                                me. I am available to answer any questions you have, and the most efficient method of contacting me is by 
-                                email. I'll do my best to respond as quickly as possible. Thanks for your time, and I look forward to hearing 
-                                from you! 😊
-                            </p>
-                            <a href="mailto:zzkeys@proton.me" class="button" style="margin-top: 80px; display: block;">Contact Me</a>
-                        </div>
+                        <p  class="contact__paragraph">
+                            Hello again, and thanks for visiting my website. I am currently looking for new job opportunities. 
+                            If you know of any openings or would like to hire me, I would greatly appreciate it if you could contact 
+                            me. I'll do my best to respond as quickly as possible. Thanks for your time, and I look forward to hearing 
+                            from you!
+                        </p>
+                        <!-- CONTACT FORM -->
+                        <form class="contactForm" action="https://formsubmit.co/86252548d15bfd9166bd0cda0ca0ae54" method="POST">
+                            <input type="hidden" name="_next" value="https://zz83.github.io/html/thanks.html">
+                            <label class="contactForm__label" for="name">Name:</label>
+                            <input id="name" class="contactForm__input"  type="text" name="name" required/>  
+                            <label class="contactForm__label" for="email">Email:</label>
+                            <input id="email" class="contactForm__input" type="text" name="email" required/>
+                            <input type="hidden" name="_subject" value="You have a new email">
+                            <label class="contactForm__label" for="message">Message:</label>
+                            <textarea id="message" class="contactForm__input" name="text" required></textarea>
+                            <input class="contactForm__submit" type="submit" value="Send Message" />
+                        </form>
                     </div>
                     
                 </section>

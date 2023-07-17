@@ -1,0 +1,32 @@
+@use '../01-tools' as *;
+
+.contactForm {
+    
+	&__input,
+	&__submit {
+		color:white;
+		width: 100%;
+		padding: rem(12px);
+		border-radius: 5px;
+		border: 2px solid orange;
+		background: blue;
+	}
+	&__input {
+		outline: 0;
+		margin-bottom: rem(48px);
+	}
+	&__input:focus { 
+		border:2px solid #0A91AB; 
+	}
+	&__submit {
+		color: orange;
+		cursor: pointer;
+		font-weight: 600;
+		font-size: rem(22.78px);
+		letter-spacing: 1px;
+	}
+	&__submit:hover { 
+		color:blue;
+		background: orange;
+	}
+}

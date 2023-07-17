@@ -1,0 +1,10 @@
+@use '../01-tools' as *;
+
+
+.contact {
+    max-width: rem(700px);
+}
+
+.contact__paragraph {
+    margin-bottom: rem(24px);
+}

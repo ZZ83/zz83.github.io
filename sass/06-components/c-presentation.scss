@@ -37,7 +37,6 @@
     }
 
     .c-presentation__paragraph {
-        color: #757575;
         font-size: rem(14px);
         margin-bottom: rem(16px);
         @include mq(medium) {
@@ -46,5 +45,5 @@
     }
 
     .c-presentation__paragraph.-space {
-    margin-top: rem(16px);
+        margin-top: rem(16px);
     }

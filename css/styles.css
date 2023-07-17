@@ -428,6 +428,7 @@ h2 {
 }
 
 p {
+  color: var(--secondary-text);
   line-height: 1.625rem;
 }
 
@@ -491,11 +492,6 @@ a {
   font-weight: 500;
   font-family: Poppins, Arial, Helvetica, sans-serif;
   text-decoration: none;
-}
-
-form {
-  margin: 0 auto;
-  max-width: 600px;
 }
 
 label {
@@ -563,6 +559,10 @@ button {
     width: calc(100% - 20.625rem);
     max-width: 80rem;
   }
+}
+
+.o-container.-contact {
+  max-width: 40rem;
 }
 
 .o-section {
@@ -748,7 +748,6 @@ button {
 }
 .c-about__paragraph {
   padding-bottom: 1.5rem;
-  color: var(--secondary-text);
 }
 
 .icons {
@@ -837,7 +836,6 @@ button {
 }
 
 .c-presentation__paragraph {
-  color: #757575;
   font-size: 0.875rem;
   margin-bottom: 1rem;
 }
@@ -849,6 +847,41 @@ button {
 
 .c-presentation__paragraph.-space {
   margin-top: 1rem;
+}
+
+.contact {
+  max-width: 43.75rem;
+}
+
+.contact__paragraph {
+  margin-bottom: 1.5rem;
+}
+
+.contactForm__input, .contactForm__submit {
+  color: white;
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 5px;
+  border: 2px solid orange;
+  background: blue;
+}
+.contactForm__input {
+  outline: 0;
+  margin-bottom: 3rem;
+}
+.contactForm__input:focus {
+  border: 2px solid #0A91AB;
+}
+.contactForm__submit {
+  color: orange;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.42375rem;
+  letter-spacing: 1px;
+}
+.contactForm__submit:hover {
+  color: blue;
+  background: orange;
 }
 
 .f-logo {
