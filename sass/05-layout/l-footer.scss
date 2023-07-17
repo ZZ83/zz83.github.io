@@ -1,0 +1,9 @@
+@use '../01-tools' as *;
+
+.l-footer {
+	height: rem(116px);
+    color: var(--primary-text);
+	@extend %flex;
+	@extend %flex-ai-c;
+	@extend %flex-jc-c;
+}

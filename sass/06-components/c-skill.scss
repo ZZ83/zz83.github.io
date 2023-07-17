@@ -1,0 +1,11 @@
+@use '../01-tools' as *;
+
+.skill {
+    text-align: center;
+}
+    .skill__svg-icon {
+        background-color: rgb(228, 228, 228);
+        padding: rem(24px);
+        border-radius: 10px;
+        margin-bottom: rem(16px);
+    }

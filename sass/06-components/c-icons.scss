@@ -1,0 +1,14 @@
+@use '../01-tools' as *;
+
+.icons {
+    display: flex;
+    &__link {
+        fill: var(--primary-text);
+        width:  rem(32px);
+        height: rem(32px);
+        margin-right: rem(24px);
+        &:hover {
+            fill: var(--accent);
+        }
+    }
+}

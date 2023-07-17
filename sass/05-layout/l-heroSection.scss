@@ -3,8 +3,8 @@
 .l-heroSection {
     display: flex;
     align-items: center;
-    height: 100vh;
-    background:linear-gradient(0deg, rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url("../zz.jpg");
+    height: calc(100vh - rem(96px));
+    background:linear-gradient(0deg, rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url("../images/hero-bg.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

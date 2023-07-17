@@ -11,3 +11,24 @@
         fill: var(--accent);
     }
 }
+
+.f-btnLink {
+    font-weight: 500;
+    border-bottom: rem(3px) solid var(--accent);
+    font-size: rem(12px);
+    letter-spacing: 0.1rem;
+    line-height: rem(32px);
+    color: var(--primary-text);
+    text-transform: uppercase;
+    @include mq(medium) {
+        font-size: rem(14px);
+    }
+}
+
+.f-btnLink:hover {
+    color: var(--accent);
+}
+
+.f-btnLink.-first {
+    margin-right: rem(32px);
+}  

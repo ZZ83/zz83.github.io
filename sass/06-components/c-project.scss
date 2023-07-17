@@ -1,0 +1,21 @@
+@use '../01-tools' as *;
+
+.project {
+    text-align: center;
+}
+
+    .project__image {
+        display: block;
+        width: 100%;
+    }
+    
+    .project__header {
+        margin-top: rem(20px);
+        font-size: rem(20px);
+        font-weight: 400;
+        text-align: center;
+        @include mq(small) {
+            margin-bottom: rem(4px);
+            font-size: rem(24px);
+        }
+    }
