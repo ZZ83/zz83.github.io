@@ -428,8 +428,8 @@ h2 {
 }
 
 p {
-  color: var(--secondary-text);
   line-height: 1.625rem;
+  color: var(--secondary-text);
 }
 
 h1,
@@ -495,20 +495,17 @@ a {
 }
 
 label {
+  color: var(--primary-text);
   display: block;
-  font-size: 1.42375rem;
+  font-size: 1.25rem;
   padding-bottom: 0.5rem;
-}
-@media (min-width: 768px) {
-  label {
-    font-size: 1.601875rem;
-  }
+  font-weight: 500;
 }
 
 input,
 textarea {
-  font-size: 1.125rem;
-  line-height: 1.801875rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 textarea {
@@ -849,39 +846,33 @@ button {
   margin-top: 1rem;
 }
 
-.contact {
-  max-width: 43.75rem;
+.contactForm {
+  margin-top: 2rem;
 }
-
-.contact__paragraph {
-  margin-bottom: 1.5rem;
-}
-
 .contactForm__input, .contactForm__submit {
-  color: white;
+  color: var(--secondary-text);
   width: 100%;
   padding: 0.75rem;
   border-radius: 5px;
-  border: 2px solid orange;
-  background: blue;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  background: var(--primary-bg);
 }
 .contactForm__input {
   outline: 0;
   margin-bottom: 3rem;
 }
 .contactForm__input:focus {
-  border: 2px solid #0A91AB;
+  border: 2px solid var(--secondary-text);
 }
 .contactForm__submit {
-  color: orange;
+  color: var(--primary-text);
   cursor: pointer;
   font-weight: 600;
-  font-size: 1.42375rem;
-  letter-spacing: 1px;
+  letter-spacing: 0.0625rem;
 }
 .contactForm__submit:hover {
-  color: blue;
-  background: orange;
+  color: var(--tertiary-bg);
+  background: var(--primary-text);
 }
 
 .f-logo {

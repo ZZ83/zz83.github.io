@@ -1,32 +1,31 @@
 @use '../01-tools' as *;
 
 .contactForm {
-    
+    margin-top: rem(32px);
 	&__input,
 	&__submit {
-		color:white;
+		color: var(--secondary-text);
 		width: 100%;
 		padding: rem(12px);
 		border-radius: 5px;
-		border: 2px solid orange;
-		background: blue;
+		border: 2px solid rgba(0, 0, 0, 0.1);
+		background: var(--primary-bg);
 	}
 	&__input {
 		outline: 0;
 		margin-bottom: rem(48px);
 	}
 	&__input:focus { 
-		border:2px solid #0A91AB; 
+		border: 2px solid var(--secondary-text); 
 	}
 	&__submit {
-		color: orange;
+		color: var(--primary-text);
 		cursor: pointer;
 		font-weight: 600;
-		font-size: rem(22.78px);
-		letter-spacing: 1px;
+		letter-spacing: rem(1px);
 	}
 	&__submit:hover { 
-		color:blue;
-		background: orange;
+		color:var(--tertiary-bg);
+		background: var(--primary-text);
 	}
 }
