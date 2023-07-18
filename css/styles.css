@@ -850,6 +850,14 @@ button {
   margin-top: 1rem;
 }
 
+.c-presentation__link:visited {
+  color: blue;
+}
+
+.c-presentation__link:hover {
+  color: var(--accent);
+}
+
 .contactForm {
   margin-top: 2rem;
 }

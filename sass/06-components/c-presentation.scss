@@ -47,3 +47,10 @@
     .c-presentation__paragraph.-space {
         margin-top: rem(16px);
     }
+
+    .c-presentation__link:visited {
+        color:blue;
+    }
+    .c-presentation__link:hover {
+        color: var(--accent);
+    }
