@@ -367,7 +367,7 @@ html {
 
 :root {
   --primary-text: #292929;
-  --secondary-text: #757575;
+  --secondary-text: #595959;
   --accent: #ff5e94;
   --primary-bg: #fcfcfc;
   --secondary-bg: #f9f9f9;
@@ -430,6 +430,10 @@ h2 {
 p {
   line-height: 1.625rem;
   color: var(--secondary-text);
+}
+
+small {
+  font-weight: 600;
 }
 
 h1,
@@ -510,7 +514,7 @@ textarea {
 
 textarea {
   resize: vertical;
-  height: 15.5rem;
+  height: 10rem;
 }
 
 button {
