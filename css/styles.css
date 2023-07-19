@@ -838,6 +838,10 @@ button {
   width: 100%;
 }
 
+.c-presentation__image.-space {
+  margin-bottom: 1.5rem;
+}
+
 .c-presentation__header,
 .c-presentation__subheader {
   font-family: Poppins;
