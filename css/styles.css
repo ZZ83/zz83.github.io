@@ -996,4 +996,18 @@ button {
   rotate: -45deg;
 }
 
+.f-thanks {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.f-thanks a {
+  color: var(--secondary-text);
+}
+.f-thanks a:hover {
+  color: var(--accent);
+}
+
 /*# sourceMappingURL=styles.css.map */
