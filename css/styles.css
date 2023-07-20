@@ -836,6 +836,7 @@ button {
 
 .c-presentation__image {
   width: 100%;
+  height: auto;
 }
 
 .c-presentation__image.-space {
