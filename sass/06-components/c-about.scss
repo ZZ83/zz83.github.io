@@ -4,12 +4,14 @@
     @include mq(large) {
         display: flex;
         justify-content: space-between;
+        gap: 7%;
     }
     &__image {
         width: 100%;
+        height: auto;
+        display: block;
         margin-bottom: rem(16px);
         @include mq(large) {
-            width:  38%;
             height: auto;
             margin-bottom: 0;
         }
