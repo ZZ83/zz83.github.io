@@ -408,11 +408,13 @@ html {
 }
 html {
   scroll-behavior: smooth;
+  height: 100vh;
 }
 
 body {
   position: relative;
   font-family: Poppins, Arial, Helvetica, sans-serif;
+  height: 100vh;
 }
 
 /********************** Variables **********************/
@@ -615,8 +617,8 @@ button {
 .l-heroSection {
   display: flex;
   align-items: center;
-  height: calc(100vh - 6rem);
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("../images/hero-bgz.jpg");
+  height: 100vh;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/uc.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
